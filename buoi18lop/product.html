@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh muc san pham</title>
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./css/mystyle.css"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="sp"></div>
+        <h1> San pham 1</h1>
+        <p> Gia: Gia 1</p>
+        <img src="./img/1.jpg" alt="https://www.amazon.com/SAMSUNG-Unlocked-Smartphone-Foldable-Compatible/dp/B0B7RCYS5G/ref=sr_1_2?adgrpid=1346903398369087&hvadid=84181728962490&hvbmt=be&hvdev=c&hvlocphy=142897&hvnetw=o&hvqmt=e&hvtargid=kwd-84182476608475%3Aloc-166&hydadcr=14712_13423975&keywords=galaxy+z+fold+4+phone&qid=1683718901&sr=8-2" />
+    </div>
+    <script>
+        $(function(){
+            loadData();
+        })
+        function loadData(){
+                console.log(product)
+                let s=''
+                $.each(product, function(i, v){
+                    s+= <div class="sp">
+
+                    </div>
+                })
+
+        }
+    </script>
+</body>
+</html>
